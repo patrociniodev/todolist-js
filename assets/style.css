@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #23233a);
+    margin: 0;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #e0e0e0;
+}
+
+.titulo-pagina {
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(108, 92, 231, 0.4);
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+#campo-tarefa {
+    width: 260px;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    background-color: #2a2a3d;
+    color: #fff;
+    outline: none;
+    transition: background-color 0.2s ease;
+}
+
+#campo-tarefa::placeholder {
+    color: #9a9aab;
+}
+
+#campo-tarefa:focus {
+    background-color: #33334a;
+}
+
+#botao-limpar {
+    padding: 12px 18px;
+    font-size: 15px;
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#botao-limpar:hover {
+    background-color: #5a4bd1;
+}
+
+#botao-limpar:active {
+    transform: scale(0.97);
+}
+
+#mensagem {
+    font-size: 14px;
+    min-height: 20px;
+    margin: 14px 0;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+#lista-tarefas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 320px;
+}
+
+#lista-tarefas::-webkit-scrollbar {
+    width: 6px;
+}
+
+#lista-tarefas::-webkit-scrollbar-thumb {
+    background-color: #6c5ce7;
+    border-radius: 10px;
+}
+
+#lista-tarefas li {
+    background-color: #2a2a3d;
+    border-left: 4px solid #6c5ce7;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    animation: entrada 0.25s ease;
+}
+
+#lista-tarefas li:hover {
+    background-color: #33334a;
+    transform: translateX(4px);
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+input {
+    width:175px;
+    padding:4px;
+    margin-top:20px;
+    text-align:center;
+}
+
+ul {
+    padding-left:10px;
+    margin-left:15px;
+    font-size:18px;
+}

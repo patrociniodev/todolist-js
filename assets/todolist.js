@@ -2,7 +2,7 @@ let tituloDaPagina = document.createElement("h1");
 tituloDaPagina.setAttribute("class", "titulo-pagina");
 tituloDaPagina.style.fontSize = "30px";
 tituloDaPagina.style.fontFamily = "Arial";
-tituloDaPagina.innerText = "Lista de Tarefas JS";
+tituloDaPagina.innerText = "Lista de Tarefas";
 let bodyPagina = document.querySelector("body");
 bodyPagina.prepend(tituloDaPagina);
 
